@@ -1,6 +1,3 @@
-<?php
-    echo "Hello PHP World!";
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>

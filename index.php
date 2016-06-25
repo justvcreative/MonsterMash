@@ -1,10 +1,12 @@
 <?php
     include("inc/header.php");
-    $title = "Monster Gallery";
+    $title = "Monster Mash";
 ?>
-    <section id="gallery">
-    	<h1 id="title"><?php echo $title; ?></h1>
-    </section>
+    <?php
+        include("inc/gallery.php");
+        include("inc/comment_section.php");
+        include("inc/footer.php");
+    ?>
 </div><!-- End Content Container -->
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script><!-- Tether for Bootstrap -->

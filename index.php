@@ -3,7 +3,7 @@
     $title = "Monster Gallery";
 ?>
     <section id="gallery">
-    	<h1 id="title" class="center-block"><?php echo $title; ?></h1>
+    	<h1 id="title"><?php echo $title; ?></h1>
     </section>
 </div><!-- End Content Container -->
     <!-- jQuery first, then Bootstrap JS. -->

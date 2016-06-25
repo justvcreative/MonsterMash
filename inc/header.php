@@ -15,5 +15,4 @@
   </head>
   <body>
     <div class="container">
-        <span id="logo" class="m-x-auto"><a href="#"><img class="img-fluid" src="img/logo.png"></a></span>
-        <div class="m-x-auto">Centered block</div>
+        <div id="logo" class="center-block"><a href="#"></a></div>

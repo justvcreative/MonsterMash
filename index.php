@@ -1,6 +1,5 @@
 <?php
     $title = "Monster Mash";
-    include("inc/connection.php");
     include("inc/header.php");   
 ?>
     <?php include("inc/gallery.php"); ?>
@@ -13,11 +12,11 @@
                 } ?>
                 <form method="POST" action="post_comment.php">
                  <div class="form-group">
-                    <input type="hidden" name="id" value="Anonymous">
+                    <input style="display: none;" type="hidden" name="id" value="Anonymous">
                     <label for="name">Name</label>
-                    <input id="name" class="form-control" type="text" name="name" placeholder="Your Name">
+                    <input id="name" class="form-control" type="text" name="name" placeholder="Your Name" maxlength="20">
                     <label for="comment">Comment</label>
-                    <textarea id="comment" class="form-control" name="comment" rows="2" cols="50" placeholder="Enter your comment"></textarea>
+                    <textarea id="comment" class="form-control" name="comment" rows="4" placeholder="Enter your comment" maxlength="120"></textarea>
                   </div>
                   <input class="btn-lg btn-warning" type="submit" value="Submit">
                 </form>

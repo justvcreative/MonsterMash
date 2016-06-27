@@ -1,6 +1,6 @@
 <section id="display_comments">
         <h2>Comments</h2>
-        <div id="comments">
+        <div id="comment-box">
 			<?php
 				$sql = 'SELECT name, comment FROM comments';
 				foreach ( $db->query($sql) as $comment) {

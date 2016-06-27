@@ -21,6 +21,12 @@ a:hover {
 	height: 100%;
 	display: block;
 }
+
+.card {
+	background: #54207F;
+	color: white;
+}
+
 input {
 	margin-bottom: .5rem;
 }
@@ -37,7 +43,7 @@ input {
 	margin-top: 2em;
 }
 
-#comments {
+#comment-box {
 	background: #E9C15D;
 	padding: 1rem;
 	border-radius: 4px;

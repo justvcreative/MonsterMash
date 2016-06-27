@@ -5,20 +5,24 @@
 ?>
     <?php include("inc/gallery.php"); ?>
     <section id="comment_section">
-        <h2>Comment</h2>
-        <?php if (isset($_GET["status"]) && $_GET["status"] == "thanks") {
-          echo "<div id='successful_comment' class='bg-success'><p>Thank you for your feedback</p></div>";
-        } ?>
-        <form method="POST" action="post_comment.php">
-         <div class="form-group">
-            <input type="hidden" name="id" value="Anonymous">
-            <label for="name">Name</label>
-            <input id="name" class="form-control" type="text" name="name" value="Your Name">
-            <label for="comment">Comment</label>
-            <textarea id="comment" class="form-control" name="comment" rows="2" cols="50">Enter A Comment</textarea>
-          </div>
-          <input class="btn-lg btn-warning" type="submit" value="Submit">
-        </form>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Write a comment</h2>
+                <?php if (isset($_GET["status"]) && $_GET["status"] == "thanks") {
+                  echo "<div id='successful_comment' class='bg-success'><p>Thank you for your feedback!</p></div>";
+                } ?>
+                <form method="POST" action="post_comment.php">
+                 <div class="form-group">
+                    <input type="hidden" name="id" value="Anonymous">
+                    <label for="name">Name</label>
+                    <input id="name" class="form-control" type="text" name="name" placeholder="Your Name">
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" class="form-control" name="comment" rows="2" cols="50" placeholder="Enter your comment"></textarea>
+                  </div>
+                  <input class="btn-lg btn-warning" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
     </section>
     <?php include("inc/comments_section.php"); ?>
     <?php include("inc/footer.php");?>

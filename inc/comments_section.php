@@ -1,13 +1,13 @@
 <section id="display_comments">
         <h2>Comments</h2>
-        <div>
+        <div id="comments">
 			<?php
 				$sql = 'SELECT name, comment FROM comments';
 				foreach ( $db->query($sql) as $comment) {
 					$name = $comment['name'];
 					$comment = $comment['comment'];
-					echo "<h4><?php echo $name; ?></h4>";
-					echo "<p><?php echo $comment; ?></p>";
+					echo "<h5>".$name."</h5>";
+					echo "<p>".$comment."</p><hr>";
 				}
 				$db = null;
 			?>   

@@ -1,9 +1,9 @@
 <?php
     $host = 'localhost';
-    $dbname = 'Grocery';
+    $dbname = 'comments';
     $user = 'root';
     $pass = 'root';
-    $dsn = "mysql:host=$host;dbname=$dbname"
+    $dsn = 'mysql:host=$host;dbname=$dbname';
     $db = new PDO($dsn, $user, $pass);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     

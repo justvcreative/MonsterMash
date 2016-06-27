@@ -14,6 +14,19 @@ body {
 	display: block;
 }
 
+#successful_comment { 
+	border-radius: 4px;
+	text-align: center;
+}
+
+#successful_comment p {
+	padding: .5rem;
+}
+
+#display_comments {
+	margin-top: 2em;
+}
+
 footer {
     margin-top: 4em;
 }

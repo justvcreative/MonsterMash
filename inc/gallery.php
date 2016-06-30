@@ -1,16 +1,22 @@
 <?php
     $pageTitle = 'Monster Gallery';
 ?>
-
 <section id="gallery">
     <h1 id="pageTitle"><?php echo $pageTitle; ?></h1>
 	<div class="row">
-		<div class="card col-sm-4">
-			<img class="card-img-top img-fluid center-block" src="img/miki-chan.png" alt="Card image cap">
-			<div class="card-block">
-			<h4 class="card-title">Card title</h4>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			</div>
-		</div>
+    <?php
+        $sql = 'SELECT name, description, img_path FROM monsters';
+        foreach ( $db->query($sql) as $monster) {
+            $name = $monster["name"];
+            $desc = $monster["description"];
+            $img = $monster["img_path"];
+            $monsterCard = '';
+            $monsterCard .= '<div class="card col-sm-4">';
+            $monsterCard .= '<img class="card-img-top img-fluid center-block" src="'. $img .'" alt="Card image cap">';
+            $monsterCard .= '<div class="card-block"><h4 class="card-title">'. $name .'</h4>';
+            $monsterCard .= '<p class="card-text">'. $desc .'</p></div>';
+            echo $monsterCard;
+        }
+    ?>
 	</div>
 </section>

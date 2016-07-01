@@ -3,7 +3,10 @@
         <div id="comment-box">
 			<?php
 				$sql = 'SELECT name, comment FROM comments';
-				foreach ( $db->query($sql) as $comment) {
+                $stmt = $db->prepare($sql);
+                $stmt->execute();
+                $rows = $stmt->fetchAll();
+				foreach ( $rows as $comment) {
 					$name = $comment['name'];
 					$comment = $comment['comment'];
 					echo "<h5>".$name."</h5>";

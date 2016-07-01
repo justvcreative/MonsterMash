@@ -30,12 +30,12 @@ a:hover {
 input {
 	margin-bottom: .5rem;
 }
-#successful_comment { 
+#successful_comment, #bad_comment { 
 	border-radius: 4px;
 	text-align: center;
 }
 
-#successful_comment p {
+#successful_comment p, #bad_comment p {
 	padding: .5rem;
 }
 

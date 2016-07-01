@@ -52,4 +52,4 @@ CREATE TABLE `monsters` (
 --
 
 INSERT INTO `monsters` (`name`, `description`, `img_path`) VALUES
-('Miki-chan', 'A baby monster that is cute on the outside, but touch on the inside', 'img/miki-chan.png');
+('Miki-chan', 'A baby monster that is cute on the outside, but tough on the inside', 'img/miki-chan.png');

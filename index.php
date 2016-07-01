@@ -9,6 +9,8 @@
                 <h2>Write a comment</h2>
                 <?php if (isset($_GET["status"]) && $_GET["status"] == "thanks") {
                   echo "<div id='successful_comment' class='bg-success'><p>Thank you for your feedback!</p></div>";
+                } else if (isset($_GET["status"]) && $_GET["status"] == "error") {
+                    echo "<div id='bad_comment' class='bg-danger'><p>Please input your name AND comment.</p></div>";
                 } ?>
                 <form method="POST" action="post_comment.php">
                  <div class="form-group">

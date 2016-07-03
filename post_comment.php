@@ -10,12 +10,10 @@
             $postComment = trim(filter_input(INPUT_POST, "comment",FILTER_SANITIZE_SPECIAL_CHARS));
             
             include("inc/connection.php");
-            
-            $sql = "INSERT INTO comments (id, name, comment) VALUES ('$postId', '$postName', '$postComment')";
+            $sql = "INSERT INTO comments ( id, name, comment) VALUES ( '$postID', '$postName', '$postComment')";
             $result = $db->query($sql);
 
             header("location:index.php?status=thanks");
         }
 
-		
     }

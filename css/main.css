@@ -23,8 +23,14 @@ a:hover {
 }
 
 .card {
-	background: #54207F;
-	color: white;
+	color: #54207F;
+    border: 2px solid #E9C15D;
+}
+.card-img-top {
+    background: #54207F;
+}
+.card-block {
+    background: #E9C15D;
 }
 
 input {

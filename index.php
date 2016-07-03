@@ -5,7 +5,7 @@
     <?php include("inc/gallery.php"); ?>
     <section id="comment_section">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-md-6">
                 <h2>Write a comment</h2>
                 <?php if (isset($_GET["status"]) && $_GET["status"] == "thanks") {
                   echo "<div id='successful_comment' class='bg-success'><p>Thank you for your feedback!</p></div>";
@@ -14,7 +14,7 @@
                 } ?>
                 <form method="POST" action="post_comment.php">
                  <div class="form-group">
-                    <input style="display: none;" type="hidden" name="id" value="Anonymous">
+                   <input style="display: none;" type="hidden" name="id" value="Anonymous">
                     <label for="name">Name</label>
                     <input id="name" class="form-control" type="text" name="name" placeholder="Your Name" maxlength="20">
                     <label for="comment">Comment</label>

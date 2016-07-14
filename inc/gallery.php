@@ -5,8 +5,10 @@
     <h1 id="pageTitle"><?php echo $pageTitle; ?></h1>
     <div class="row">
     <?php
-        $sql = 'SELECT name, description, img_path FROM monsters';
-        foreach ( $db->query($sql) as $monster) {
+        $sql = 'SELECT * FROM monsters';
+        $monsters = $db->prepare($sql);
+        $monsters->execute();
+        foreach ( $monsters as $monster) {
             $name = $monster["name"];
             $desc = $monster["description"];
             $img = $monster["img_path"];

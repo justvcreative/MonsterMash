@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Jul 03, 2016 at 10:23 PM
+-- Generation Time: Jul 15, 2016 at 12:25 AM
 -- Server version: 5.5.42
 -- PHP Version: 5.6.10
 
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `MonsterMash`
 --
+CREATE DATABASE IF NOT EXISTS `MonsterMash` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `MonsterMash`;
 
 -- --------------------------------------------------------
 
@@ -30,7 +32,7 @@ CREATE TABLE `comments` (
   `id` int(11) NOT NULL,
   `name` varchar(20) NOT NULL,
   `comment` varchar(120) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `comments`
@@ -41,7 +43,8 @@ INSERT INTO `comments` (`id`, `name`, `comment`) VALUES
 (2, 'Angie Stone', 'I would like to see an angel monster.'),
 (3, 'Anime Girl', 'I would love a Sushi Monster.'),
 (4, 'Mama Mia', 'Would love a pizza monster'),
-(5, 'Count Dracula', 'Would love a vampire monster!');
+(5, 'Count Dracula', 'Would love a vampire monster!'),
+(6, 'Lolo', 'These are really neat!');
 
 -- --------------------------------------------------------
 
@@ -81,7 +84,7 @@ ALTER TABLE `comments`
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

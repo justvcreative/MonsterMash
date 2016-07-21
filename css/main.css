@@ -22,6 +22,10 @@ a:hover {
 	display: block;
 }
 
+.card-block {
+    min-height: 10em;
+}
+
 .card {
     background: #54207F;
 	color: #54207F;

@@ -13,7 +13,7 @@
             $desc = $monster["description"];
             $img = $monster["img_path"];
             $monsterCard = '';
-            $monsterCard .= '<div class="col-lg-3 col-sm-6"><div class="card">';
+            $monsterCard .= '<div class="col-lg-3 col-sm-6"><div class="card monsterCard">';
             $monsterCard .= '<img class="card-img-top img-fluid center-block" src="'. $img .'" alt="'. $name .'">';
             $monsterCard .= '<div class="card-block"><h4 class="card-title">'. $name .'</h4>';
             $monsterCard .= '<p class="card-text">'. $desc .'</p></div></div></div>';

@@ -9,7 +9,7 @@
 				foreach ( $rows as $comment) {
 					$name = $comment['name'];
 					$comment = $comment['comment'];
-					echo "<h5>".$name."</h5>";
+					echo "<h5>".$name."</h5></li>";
 					echo "<p>".$comment."</p><hr>";
 				}
 				$db = null;
